@@ -61,4 +61,27 @@ entidade**. Por exemplo:
 
 ## SellerDaoJDBC and DaoFactory
 
-(video)
+**DaoFactory**
+- Essa classe expõe um método que retorna o tipo da interface, mas internamente
+ela vai instanciar uma implementação, é uma forma de não expor a implementação.
+
+**DepartmentDao e SellerDao**
+- As interfaces são uma forma de deixar sua classe dependente apenas da interface e
+não de uma implementação. Desta forma, você pode no futuro trocar a
+implementação sem se preocupar com impactos em outras partes do código, desde
+que a nova implementação atenda à interface.
+
+## findById implementation
+
+**SQL Query:**
+
+```sql
+SELECT seller.*,department.Name as DepName
+FROM seller INNER JOIN department
+ON seller.DepartmentId = department.Id
+WHERE seller.Id = ?
+```
+
+![image](https://user-images.githubusercontent.com/56324728/90812487-905ef680-e2fc-11ea-89d4-a63668b5bdaa.png)
+
+
