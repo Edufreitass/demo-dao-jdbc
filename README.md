@@ -148,4 +148,13 @@ SET Name = ?, Email = ?, BirthDate = ?, BaseSalary = ?, DepartmentId = ?
 WHERE Id = ?
 ```
 
+## delete implementation
+
+**SQL Query:**
+```sql
+DELETE FROM seller
+WHERE Id = ?
+```
+
+
 
