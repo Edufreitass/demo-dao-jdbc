@@ -47,4 +47,14 @@ entidade**. Por exemplo:
 
 ## Seller entity class
 
+**Entity class checklist:**
+- Attributes
+- Constructors
+- Getters/Setters
+- hashCode and equals
+- toString
+- implements Serializable
+
+## DepartmentDao and SellerDao interfaces
+
 (video)
