@@ -33,3 +33,15 @@ entidade**. Por exemplo:
       git commit -m "Project created"
       git push -u origin master
  
+## Department entity class
+
+**Entity class checklist:**
+- Attributes
+- Constructors
+- Getters/Setters
+- hashCode and equals
+- toString
+- implements Serializable
+
+![image](https://user-images.githubusercontent.com/56324728/90803554-49b6cf80-e2ef-11ea-826c-26653786224a.png)
+
