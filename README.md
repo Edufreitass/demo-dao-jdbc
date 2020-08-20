@@ -45,3 +45,6 @@ entidade**. Por exemplo:
 
 ![image](https://user-images.githubusercontent.com/56324728/90803554-49b6cf80-e2ef-11ea-826c-26653786224a.png)
 
+## Seller entity class
+
+(video)
