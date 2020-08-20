@@ -139,4 +139,13 @@ VALUES
 (?, ?, ?, ?, ?)
 ```
 
+## update implementation
+
+**SQL Query:**
+```sql
+UPDATE seller
+SET Name = ?, Email = ?, BirthDate = ?, BaseSalary = ?, DepartmentId = ?
+WHERE Id = ?
+```
+
 
