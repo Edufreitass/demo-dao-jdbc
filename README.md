@@ -57,4 +57,8 @@ entidade**. Por exemplo:
 
 ## DepartmentDao and SellerDao interfaces
 
+![image](https://user-images.githubusercontent.com/56324728/90810304-1d07b580-e2f9-11ea-969f-da17c49d82e8.png)
+
+## SellerDaoJDBC and DaoFactory
+
 (video)
