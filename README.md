@@ -129,4 +129,14 @@ ON seller.DepartmentId = department.Id
 ORDER BY Name
 ```
 
+## insert implementation
+
+**SQL Query:**
+```sql
+INSERT INTO seller
+(Name, Email, BirthDate, BaseSalary, DepartmentId)
+VALUES
+(?, ?, ?, ?, ?)
+```
+
 
