@@ -84,4 +84,26 @@ WHERE seller.Id = ?
 
 ![image](https://user-images.githubusercontent.com/56324728/90812487-905ef680-e2fc-11ea-89d4-a63668b5bdaa.png)
 
+## Reusing instantiation
+
+```java
+private Seller instantiateSeller(ResultSet rs, Department dep) throws SQLException {
+      Seller obj = new Seller();
+      obj.setId(rs.getInt("Id"));
+      obj.setName(rs.getString("Name"));
+      obj.setEmail(rs.getString("Email"));
+      obj.setBaseSalary(rs.getDouble("BaseSalary"));
+      obj.setBirthDate(rs.getDate("BirthDate"));
+      obj.setDepartment(dep);
+      return obj;
+}
+
+private Department instantiateDepartment(ResultSet rs) throws SQLException {
+      Department dep = new Department();
+      dep.setId(rs.getInt("DepartmentId"));
+      dep.setName(rs.getString("DepName"));
+      return dep;
+}
+```
+
 
