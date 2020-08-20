@@ -156,5 +156,9 @@ DELETE FROM seller
 WHERE Id = ?
 ```
 
+## DepartmentDao implementation and test
 
-
+**Checklist:**
+- DepartmentDaoJDBC
+- DaoFactory
+- Program2
