@@ -106,4 +106,17 @@ private Department instantiateDepartment(ResultSet rs) throws SQLException {
 }
 ```
 
+## findByDepartment implementation
+
+**SQL Query:**
+```sql
+SELECT seller.*,department.Name as DepName
+FROM seller INNER JOIN department
+ON seller.DepartmentId = department.Id
+WHERE DepartmentId = ?
+ORDER BY Name
+```
+
+![image](https://user-images.githubusercontent.com/56324728/90817696-8b9e4080-e304-11ea-9ea0-d81a4fa9da8f.png)
+
 
